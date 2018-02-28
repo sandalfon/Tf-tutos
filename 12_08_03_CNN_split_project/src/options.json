@@ -1,0 +1,44 @@
+{
+    "data": {
+        "dl_dir": "..\\dl\\",
+        "data_dir": "..\\data\\",
+        "extract_folder": "cifar-10-batches-bin",
+        "force_extract": false,
+        "force_dl": false,
+        "img_height": 32,
+        "img_width": 32,
+        "crop_height": 24,
+        "crop_width": 24,
+        "num_channels": 3,
+        "url": "http://www.cs.toronto.edu/~kriz",
+        "filename": "cifar-10-binary.tar.gz",
+        "distort_images": true
+    },
+    "model": {
+        "num_targets": 10,
+        "kernel1": [5, 5, 3, 64],
+        "stride1a": [1, 1, 1, 1],
+        "kernel2": [5, 5, 64, 64],
+        "paddTypeS": "SAME",
+        "ksize1": [1, 3, 3, 1],
+        "stride1b": [1, 2, 2, 1],
+        "depth_radius": 5, 
+        "bias": 2.0,
+        "alpha": 1e-3,
+        "beta" :0.75,
+        "shape64": 64,
+        "shape192": 192,
+        "shape384": 384
+    },
+    "run": {
+        "batch_size": 128,
+        "run_dir": "temp",
+        "output_every": 50,
+        "eval_every": 500,
+        "generations": 20000,
+        "learning_rate": 0.1,
+        "lr_decay": 0.1,
+        "num_gens_to_wait": 250.0,
+        "min_after_dequeue": 5000
+    }
+}
