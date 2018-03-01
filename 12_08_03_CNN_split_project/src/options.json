@@ -35,11 +35,13 @@
         "run_dir": "temp",
         "output_every": 50,
         "eval_every": 500,
-        "generations": 20000,
+        "generations": 15000,
         "learning_rate": 0.1,
         "lr_decay": 0.1,
         "num_gens_to_wait": 250.0,
         "min_after_dequeue": 5000,
-        "log_dir": "..\\log\\"
+        "log_dir": "..\\log\\",
+        "restore_boolean": true,
+        "restor_file": "model_eval_every.ckpt"
     }
 }
